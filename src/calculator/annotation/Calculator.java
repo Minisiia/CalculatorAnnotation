@@ -15,8 +15,13 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Calculator {
+    /**
+     * @return integer number1
+     */
     int number1() default 0;
-
+    /**
+     * @return integer number2
+     */
     int number2() default 0;
 
 }
